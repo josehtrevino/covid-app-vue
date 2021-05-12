@@ -7,6 +7,13 @@ const routes = [
     name: 'Home',
     component: Home
   },
+  {
+    path: "/visualize/:country/:status",
+    name: "Visualize",
+    component: () =>
+      import(/* webpackChunkName: "visualize" */ "../views/Charts.vue"),
+    props: true
+  },
 ]
 
 const router = createRouter({

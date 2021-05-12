@@ -12,6 +12,13 @@
         <span class="font-bold">Total:</span>
         {{ numberWithCommas(stats.TotalConfirmed) }}
       </div>
+      <router-link 
+        v-if="stats.Country"
+        :to="`/visualize/${stats.Slug}/confirmed`"
+        class="block mx-auto bg-green-500 text-white rounded p-3 mt-10 focus:outline-none hover:bg-green-600"
+      >
+        View More
+      </router-link>
     </div>
 
     <div class="shadow-md bg-red-200 p-10 text-center rounded">
@@ -25,6 +32,13 @@
         <span class="font-bold">Total:</span>
         {{ numberWithCommas(stats.TotalDeaths) }}
       </div>
+      <router-link 
+        v-if="stats.Country"
+        :to="`/visualize/${stats.Slug}/deaths`"
+        class="block mx-auto bg-red-500 text-white rounded p-3 mt-10 focus:outline-none hover:bg-red-600"
+      >
+        View More
+      </router-link>
     </div>
   </div>
 </template>
@@ -43,7 +57,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-
-</style>
