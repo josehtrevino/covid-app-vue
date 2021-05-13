@@ -14,7 +14,7 @@
       </div>
       <router-link 
         v-if="stats.Country"
-        :to="`/visualize/${stats.Slug}/confirmed`"
+        :to="`/view/${stats.Slug}/confirmed`"
         class="block mx-auto bg-green-500 text-white rounded p-3 mt-10 focus:outline-none hover:bg-green-600"
       >
         View More
@@ -34,7 +34,7 @@
       </div>
       <router-link 
         v-if="stats.Country"
-        :to="`/visualize/${stats.Slug}/deaths`"
+        :to="`/view/${stats.Slug}/deaths`"
         class="block mx-auto bg-red-500 text-white rounded p-3 mt-10 focus:outline-none hover:bg-red-600"
       >
         View More

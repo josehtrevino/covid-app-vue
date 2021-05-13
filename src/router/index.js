@@ -8,7 +8,7 @@ const routes = [
     component: Home
   },
   {
-    path: "/visualize/:country/:status",
+    path: "/view/:country/:status",
     name: "Visualize",
     component: () =>
       import(/* webpackChunkName: "visualize" */ "../views/Charts.vue"),
