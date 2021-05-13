@@ -1,4 +1,8 @@
-# covid-app
+# COVID App
+
+![Screenshot](./public/screenshot.png)
+
+App that allows to track information related to COVID-19 by country (positive cases and deaths). API used: https://covid19api.com
 
 ## Project setup
 ```
