@@ -2,6 +2,12 @@
   <main>
     <h2 class="text-center text-2xl font-bold mt-3">Coming soon...</h2>
     <line-chart />
+    <router-link 
+      to="/"
+      class="mx-auto bg-blue-700 text-white rounded p-3 mt-3 focus:outline-none hover:bg-blue-400"
+    >
+      Go Back
+    </router-link>
   </main>
 </template>
 
